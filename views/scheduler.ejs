@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="/socket.io/socket.io.js" defer></script>
+    <script>
+      const id = "<%= meetid %>";
+    </script>
+    <script src="scheduler.js" defer></script>
+  </head>
+  <body>
+    <div class="main">
+      <h3 style = "margin-left: 500px;">Meeting Link : <%= meetid %></h3>
+        <label for="subject" style = "margin-left: 550px;">Subject : </label>
+        <input type="text" id="subject" name="subject" /><br /><br />
+        <label for="to" style = "margin-left: 550px;">To : </label>
+        <input type="text" id="to" name="to" /><br /><br />
+        <label for="time" style = "margin-left: 550px;" >Time : </label>
+        <input type="time" id="time" name="time" /><br /><br />
+        <input type="submit" id="submit" value="Submit" style = "margin-left: 550px;" />
+      </form>
+    </div>
+  </body>
+</html>

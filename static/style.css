@@ -1,0 +1,64 @@
+body {
+    background-color:#ffffff; 
+    
+}
+
+.Name-Page {
+    width: 400px;
+    padding: 10% 0 0 0;
+    margin: auto;
+}
+.h1 {
+    font-family: 'proxima-nova', "sans-serif";
+    color: #000;
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+.form {
+    position: relative;
+    z-index: 1;
+    background-color: white;
+    max-width: 200px;
+    margin: 0 auto 100px;
+    padding: 25px;
+    text-align: center
+}
+
+.form input {
+    font-family: 'proxima-nova', "sans-serif";
+    outline: 1;
+    background: rgb(226, 218, 218);
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 14px
+}
+
+.form button {
+    font-family: 'proxima-nova', "sans-serif";
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #1a73e8;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form p {
+    font-family: 'proxima-nova', "sans-serif";
+    font-size: 16px;
+    margin: 15px
+}
+
+.form button:hover {
+    background-color: #0d47a1;
+}
+
+.form .unknown-form {
+    display: none
+}
