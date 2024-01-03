@@ -1,5 +1,5 @@
 # ConnectIO
-Gmeet-Clone built using WEBRTC Socket.IO PeerJS
+Video conferencing site built using WEBRTC Socket.IO PeerJS
 
 ## Prerequisites
 - Install Node.js in your machine.
