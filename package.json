@@ -1,0 +1,39 @@
+{
+  "name": "gmeet-clone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-session": "^2.0.0",
+    "dotenv": "^16.3.1",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "nodemailer": "^6.9.3",
+    "nodemon": "^2.0.22",
+    "passport": "^0.6.0",
+    "passport-google-oauth2": "^0.2.0",
+    "peer": "^1.0.0",
+    "peerjs": "^1.4.7",
+    "socket.io": "^4.6.2",
+    "socket.io-client": "^4.6.2",
+    "uuid": "^9.0.0"
+  },
+  "engines": {
+    "node": ">=14 <15"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maharsh04/https---github.com-HimanshuTembhe-Gmeet_clone.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/Maharsh04/https---github.com-HimanshuTembhe-Gmeet_clone/issues"
+  },
+  "homepage": "https://github.com/Maharsh04/https---github.com-HimanshuTembhe-Gmeet_clone#readme"
+}

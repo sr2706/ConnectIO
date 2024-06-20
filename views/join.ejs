@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&family=Wix+Madefor+Text&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/WebApp/android-chrome-192x192.png">
+    <script src="https://kit.fontawesome.com/f141c7fb9d.js" crossorigin="anonymous"></script>
+    <title>Join Meeting</title>
+</head>
+<body style="background: white">
+    <div class="join-card">
+        <div class="logo">
+            <h5>ConnectIO</h5>
+        </div>
+        <p class="tagline">
+            Create Connections, Ignite Possibilities
+        </p>
+        <input type="text" class="roomid" placeholder="Enter room ID..." required>
+        <button class="join btn">Join the meeting</button>
+        <p class="info">Want to start a new meeting ?<a href="/start">Start</a></p>
+    </div>
+    <script>
+        const roomid=document.querySelector('.roomid');
+        const join=document.querySelector('.join');
+
+        join.addEventListener('click',()=>{
+            if(roomid.value!=''){
+                window.location.href=`/${roomid.value}`;
+            }
+            else{
+                alert('Please enter valid meeting link');
+            }
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&family=Wix+Madefor+Text&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/WebApp/android-chrome-192x192.png">
+    <script src="https://kit.fontawesome.com/f141c7fb9d.js" crossorigin="anonymous"></script>
+    <title>ConnectIO</title>
+</head>
+
+<body style="background: white">
+    <div class="card">
+        <div class="logo">
+            <h5>ConnectIO</h5>
+        </div>
+        <p class="tagline">
+            Create Connections, Ignite Possibilities
+        </p>
+        <button class="login">Sign in with Google</button> 
+    </div>
+</body>
+<script>
+    const login=document.querySelector('.login');
+    login.addEventListener('click',()=>{
+        window.location.href='/google';
+    })
+</script>
+</html>

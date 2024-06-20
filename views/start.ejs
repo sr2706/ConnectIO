@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&family=Wix+Madefor+Text&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/WebApp/android-chrome-192x192.png">
+    <script src="https://kit.fontawesome.com/f141c7fb9d.js" crossorigin="anonymous"></script>
+    <title>Start Meeting</title>
+</head>
+<body style="background-color: white">
+    <div class="start-card">
+        <div class="logo">
+            <h5>ConnectIO</h5>
+        </div>
+        <p class="tagline">
+            Create Connections, Ignite Possibilities
+        </p>
+        <button class="start btn">New meeting</button>
+        <p class="info">Want to join an existing meet ?<a href="/join">Join</a></p>
+    </div>
+</body>
+<script>
+    const start=document.querySelector('.start');
+    start.addEventListener('click',()=>{
+        window.location.href='/meeting';
+    })
+</script>
+</html>

@@ -1,0 +1,444 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Wix Madefor Text', sans-serif;
+}
+.main{
+    display: flex;
+    height: 100vh;
+}
+.video-section{
+    width: 80%;
+    background-color:rgb(32,33,36);
+    display: flex;
+    flex-direction: column;
+}
+.video-window{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+    overflow: auto;
+}
+
+#video-grid{
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+    justify-content: center;
+}
+.videoContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+video{
+    flex: 0 0 20;
+    height : 200px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin: 10px;
+    cursor: zoom-in;
+}
+
+.control-window{
+    display: flex;
+    justify-content: space-between;
+}
+.date-time span{
+    position: relative;
+    top: 15px;
+    left: 18px;
+    color: white;
+}
+.control-block{
+    display: flex;
+}
+.control-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 10px;
+    height: 40px;
+    width: 40px;
+    padding: 14px 10px;
+    border-radius: 50%;
+    color: white;
+    /* background-color: rgb(234,67,53); */
+    background-color: rgb(95, 100, 106);
+    cursor: pointer;
+}
+
+.control-button:hover{
+    background-color: rgb(148, 148, 148);
+}
+
+.mute,.stop,.on{
+    background-color: rgb(234,67,53);
+}
+.mute:hover,.stop:hover,.on:hover{
+    background-color:rgb(239, 88, 74) ;
+}
+.leave-button{
+    width: 100px;
+    border-radius: 20px;
+    background-color: rgb(234,67,53);
+}
+.leave-button:hover{
+    background-color: rgb(239, 88, 74);
+}
+
+
+
+.chat-section{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(241,243,244);
+}
+.header{
+    background-color: rgb(241,243,244);
+    margin: 10px auto;
+    padding: 10px auto;
+    text-align: center;
+    color: rgb(32,33,36);
+}
+.header h5{
+    font-size: 25px;
+    font-weight: 600;
+}
+.chat-window{
+    flex-grow: 1;
+    overflow-y: scroll;
+}
+.chat-window div{
+    display: flex;
+    flex-direction: column;
+    margin: 8px 2px;
+}
+.chat-window div p{
+    background-color: #D3F4FF;
+    width: 75%;
+    margin: 0 5px;
+    padding: 5px 6px;
+    border-radius: 20px;
+    overflow-wrap: break-word;
+    font-size: 16px; 
+}
+
+.chat-window div h6{
+    font-size: 10px;
+    font-weight: 600;
+    padding: 0 6px;
+    margin: 0 5px;
+}
+.message-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.message-container input{
+    width: 80%;
+    border: 0;
+    outline:none;
+    background-color: rgb(192, 196, 201);
+    padding: 14px;
+    color: black;
+    font-size: 15px;
+    font-weight: 550;
+    border-radius: 10px;
+    margin-right: 2px;
+    margin-left: 2px;
+    margin-bottom: 3px;
+}
+
+.message-container .send-button{
+    font-size: 18px;
+    font-weight: 550;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 12px 12px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color:rgb(192, 196, 201) ;
+    cursor: pointer;
+}
+.send-button:hover{
+    background-color:rgb(143, 149, 158) ;
+}
+
+
+.adduserbody{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.emailpannel{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.emailInput{
+    flex: 1;
+    border: 1px solid rgb(192, 196, 201) ;
+    outline:none;
+    background-color: white;
+    padding: 12px;
+    color: black;
+    font-size: 15px;
+    font-weight: 550;
+    border-radius: 10px;
+    margin-right: 2px;
+    margin-left: 2px;
+}
+.sendEmail{
+    font-size: 15px;
+    font-weight: 550;
+    padding: 12px;
+}
+
+.modal-body>p{
+    font-size: 15px;
+    font-weight: 580;
+    margin: 5px auto;
+}
+
+.copymessagepannel{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyMessage{
+    resize: none;
+    flex: 1;
+    border: 1px solid rgb(192, 196, 201) ;
+    outline:none;
+    background-color: white;
+    padding: 12px;
+    color: black;
+    font-size: 14px;
+    font-weight: 550;
+    border-radius: 10px;
+    margin-right: 2px;
+    margin-left: 2px;
+}
+
+.copy{
+    font-size: 18px;
+    font-weight: 550;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 12px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color:rgb(192, 196, 201) ;
+    cursor: pointer;
+    border: 0;
+}
+.copy:hover{
+    background-color:rgb(143, 149, 158);
+}
+
+
+
+.container{
+    width: 35%;
+    background: linear-gradient(45deg, #E3F4F4,#ffffff);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 40vh;
+    border-radius: 20px;
+    margin: 60px auto 60px;
+    box-shadow: 5px 5px 5px black;
+}
+.container h5{
+    font-size: 40px;
+    font-weight: 580;
+    margin: 20px auto;
+}
+
+.home{
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 4px auto;
+    width: 40%;
+    padding: 10px 10px;
+    border-radius: 6px;
+    color: black;
+    background-color: #6A82FB;
+    cursor: pointer;
+}
+
+
+.count-down{
+    width: 22%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+}
+
+.count-down div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2.5px solid #6A82FB;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+.count-down div h5{
+    font-size: 18px;
+    font-weight: 580;
+    margin: auto;
+}
+.count-down p{
+    margin: auto;
+    font-size: 18px;
+    font-weight: 580;
+}
+
+
+.card{
+    background: linear-gradient(45deg, #E3F4F4,#ffffff);
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    width: 35%;
+    border-radius: 20px;
+    margin: 60px auto 60px;
+    box-shadow: 5px 5px 5px black;
+}
+
+.logo{
+    margin: 3px auto;
+    padding: 10px;
+}
+
+.logo h5{
+    font-family: cursive;
+    font-size: 45px;
+}
+
+.tagline{
+    flex-basis: 12vh;
+    margin: 3px auto;
+    font-size: 18px;
+    font-weight: 600;
+}
+.login{
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 4px auto;
+    width: 50%;
+    padding: 10px 10px;
+    border-radius: 6px;
+    color: black;
+    background-color: #6A82FB;
+    cursor: pointer;
+}
+
+
+
+.start-card{
+    background: linear-gradient(45deg, #E3F4F4,#ffffff);
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    width: 35%;
+    border-radius: 20px;
+    margin: 60px auto 60px;
+    box-shadow: 5px 5px 5px black;
+}
+
+.btn{
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 4px auto;
+    width: 50%;
+    padding: 10px 10px;
+    border-radius: 6px;
+    color: black;
+    background-color: #6A82FB;
+    cursor: pointer;
+}
+
+.btn-send{
+    width: 20%;
+}
+
+.info{
+    margin: 2px auto;
+    font-size: 14px;
+    
+}
+
+
+
+.join-card{
+    background: linear-gradient(45deg, #E3F4F4,#ffffff);
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    width: 35%;
+    border-radius: 20px;
+    margin: 60px auto 60px;
+    box-shadow: 5px 5px 5px black;
+}
+
+.roomid{
+    width: 80%;
+    border: 2px solid #DDE6ED;
+    outline:none;
+    padding: 10px;
+    color: black;
+    font-size: 15px;
+    font-weight: 550;
+    border-radius: 10px;
+    margin: 20px auto 10px;
+}
+
+.whiteboard-screen{
+    width: 100%;
+    height: 100vh;
+    background-color: #F5F5F5;
+    border: 2px solid black;
+    display: none;
+}
+.whitespace{
+    cursor: crosshair;
+}
+
+.color-palette{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(177, 183, 189,0.5);
+    align-items: center;
+    width: 10%;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    margin: 5px;
+    padding: 2px;
+    border-radius: 10px;
+}
+
+.color{
+    width: 18px;
+    height: 18px;
+    border: 0.5px solid black;
+    border-radius: 50%;
+    cursor: pointer;
+}
