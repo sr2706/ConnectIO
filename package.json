@@ -1,5 +1,5 @@
 {
-  "name": "gmeet-clone",
+  "name": "connect-io",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -7,36 +7,24 @@
     "node": "18.x"
   },
   "scripts": {
-    "start": "nodemon server.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cookie-session": "^2.0.0",
-    "dotenv": "^16.3.1",
-    "ejs": "^3.1.9",
-    "express": "^4.18.2",
-    "express-session": "^1.17.3",
-    "nodemailer": "^6.9.3",
-    "nodemon": "^2.0.22",
-    "passport": "^0.6.0",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "nodemailer": "^6.9.14",
+    "nodemon": "^3.1.4",
+    "passport": "^0.7.0",
     "passport-google-oauth2": "^0.2.0",
-    "peer": "^1.0.0",
-    "peerjs": "^1.4.7",
-    "socket.io": "^4.6.2",
-    "socket.io-client": "^4.6.2",
-    "uuid": "^9.0.0"
-  },
-  "engines": {
-    "node": ">=14 <15"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Maharsh04/https---github.com-HimanshuTembhe-Gmeet_clone.git"
-  },
-  "keywords": [],
-  "bugs": {
-    "url": "https://github.com/Maharsh04/https---github.com-HimanshuTembhe-Gmeet_clone/issues"
-  },
-  "homepage": "https://github.com/Maharsh04/https---github.com-HimanshuTembhe-Gmeet_clone#readme"
+    "peer": "^1.0.2",
+    "peerjs": "^1.5.4",
+    "socket.io": "^4.7.5",
+    "socket.io-client": "^4.7.5",
+    "uuid": "^10.0.0"
+  }
 }
